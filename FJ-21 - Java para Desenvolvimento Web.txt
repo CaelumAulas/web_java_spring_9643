@@ -1,0 +1,113 @@
+FJ-21 - Java para Desenvolvimento Web
+
+leonardo.silva@caelum.com.br
+
+https://www.linkedin.com/in/leonardo-silva-dev/
+
+https://jamboard.google.com/d/1iX6iPiKDGwomOdYtAxRNOez-NNR9oeSkdFIfT8wUa-M/edit?usp=sharing
+
+Arquivos do Curso: https://drive.google.com/drive/u/0/folders/0B0qR-YC8wtA2NWJxUlJUYUctS1U
+
+https://sistema.caelum.com.br/avaliacao/d42e218
+
+https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status#mensagens_de_redirecionamento
+http://www.displaytag.org/1.2/
+http://cewolf.sourceforge.net/new/index.html
+https://pt-br.reactjs.org/
+https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-servlet-config
+
+--- Contato com a Thayna
+Comercial Caelum
+Thayná Oliveira  11 97030-0195
+Discord: https://discord.gg/hSPpX6Fn
+--
+
+mysql -u root -p 
+use fj21;
+
+jdbc:mysql://localhost/fj21?useTimezone=true&serverTimezone=UTC
+
+---
+
+?useTimezone=true&serverTimezone=UTC
+
+?useTimezone=true&serverTimezone=UTC&useSSL=false
+
+ATIVIDADES
+2.6 EXERCÍCIOS: CONNECTIONFACTORY
+2.11 EXERCÍCIOS: JAVABEANS E CONTATODAO
+2.13 EXERCÍCIOS: LISTAGEM
+3.5 EXERCÍCIOS: PREPARANDO O TOMCAT
+3.10 EXERCÍCIOS: CONFIGURANDO O TOMCAT NO ECLIPSE
+4.2 EXERCÍCIOS: NOVO PROJETO WEB
+4.5 EXERCÍCIOS: PRIMEIRA PÁGINA
+5.5 EXERCÍCIOS: PRIMEIRA SERVLET
+5.11 EXERCÍCIOS: CRIANDO FUNCIONALIDADE PARA GRAVAR CONTATOS
+5.14 EXERCÍCIO: TRATANDO EXCEÇÕES E CÓDIGOS HTTP
+6.2 EXERCÍCIOS: PRIMEIRO JSP
+6.4 EXERCÍCIOS OPCIONAIS: LISTA DE CONTATOS COM LET
+6.7 EXERCÍCIOS: PARÂMETROS COM A EXPRESSION LANGUAGE
+7.7 EXERCÍCIOS: FOREACH
+7.11 EXERCÍCIOS: LISTA DE CONTATOS COM CONDICIONAIS
+7.13 EXERCÍCIOS: CABEÇALHOS E RODAPÉS
+7.15 EXERCÍCIOS: FORMATANDO A DATA DE NASCIMENTO DOS CONTATOS
+8.4 EXERCÍCIOS: CRIANDO NOSSA PRÓPRIA TAG PARA CALENDÁRIO
+9.3 EXERCÍCIOS: REQUEST DISPATCHER
+9.6 EXERCÍCIOS: CRIANDO NOSSAS LÓGICAS E A SERVLET DE CONTROLE
+9.7 EXERCÍCIOS: CRIANDO UMA LÓGICA PARA REMOVER CONTATOS
+10.6 EXERCÍCIOS: FILTROS
+11.7 EXERCÍCIOS: CONFIGURANDO O SPRING MVC E TESTANDO A CONFIGURAÇÃO
+11.9 EXERCÍCIOS: CRIANDO TAREFAS
+11.12 EXERCÍCIOS: VALIDANDO TAREFAS
+11.14 EXERCÍCIOS: LISTANDO TAREFAS
+11.16 EXERCÍCIOS: REMOVENDO E ALTERANDO TAREFAS
+12.6 EXERCÍCIO: FAZENDO O LOGIN NA APLICAÇÃO
+12.8 EXERCÍCIOS: INTERCEPTANDO AS REQUISIÇÕES
+12.9 EXERCÍCIOS OPCIONAIS: LOGOUT
+13.5 EXERCÍCIOS: INVERSÃO DE CONTROLE COM O SPRING CONTAINER
+13.7 EXERCÍCIOS OPCIONAIS: APLICANDO CSS NAS PÁGINAS
+13.9 EXERCÍCIOS: DEPLOY COM WAR
+
+Atalhos do Eclipse:
+
+Ctrl + 1 Aciona o quick fixes com sugestões para correção de erros.
+
+Ctrl + Espaço Completa códigos
+
+Ctrl + Shift + O Obtem os imports ou limpa os não utilizados
+
+Ctrl + 3 Aciona modo de descoberta de menu. Experimente digitar Ctrl+3 e depois digitar ggas e
+enter. Ou então de Ctrl + 3 e digite new class.
+
+Ctrl + F11 roda a última classe que você rodou. É o mesmo que clicar no ícone verde que parece
+um botão de play na barra de ferramentas.
+
+Ctrl + Shift + F Formata o código segundo as convenções do Java
+
+Ctrl + M Expande a View atual para a tela toda (mesmo efeito de dar dois cliques no título da View)
+
+
+create table contatos (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(255),
+    email VARCHAR(255),
+    endereco VARCHAR(255),
+    dataNascimento DATE,
+    primary key (id)
+);
+
+< type="text/java">
+	$("#${id}").datepicker({
+		dateFormat: 'dd/mm/yy',
+	 	dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+	    dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+	    dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+	    monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+	    monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
+	    nextText: 'Próximo',
+	    prevText: 'Anterior'
+	});
+</>
+
